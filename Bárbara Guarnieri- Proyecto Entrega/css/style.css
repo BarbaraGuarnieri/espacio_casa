@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "PT Serif", serif;
+    font-family: "PT Serif", serif;
+}
+
+/*!-----header--------*/
+header {
+    background-color: #fafaf5;
+    margin: 0px;
+}
+
+header h1 {
+    font-size: 100px;
+    font-weight: 800;
+    color: #0e62b0;
+    text-align: center;
+}
+
+/*!------- section encabezado-----*/
+.encabezado {
+    background-color: #0e62b0;
+}
+
+.encabezado h1 {
+    text-decoration: none;
+    font-size: 60px;
+    font-style: unset;
+    color: #fafaf5;
+    text-align: left;
+}
+
+.encabezado nav ul li {
+    margin: 20px;
+}
+
+.encabezado nav ul li a {
+    text-decoration: none;
+    color: #0e62b0;
+    font-size: 20px;
+    background-color: #fafaf5;
+    padding: 5px;
+    transition: 0.6s;
+}
+
+.encabezado nav ul li a:hover {
+    color: #fafaf5;
+    background-color: #0e62b0;
+}
+
+.boton {
+    border: 15px;
+    color: #0e62b0;
+    transition: 5s;
+}
+
+.boton:hover {
+    background-color: #0e62b0;
+    color: #fafaf5;
+}
+
+/*!-----hero section------------*/
+.hero div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero h2 {
+    color: #0e62b0;
+    font-size: 80px;
+    text-transform: none;
+    text-align: center;
+    background-color: #fafaf5;
+    padding: 30px;
+}
+
+.hero article img {
+    width: 400px;
+    height: 400px;
+}
+
+.hero article {
+    width: 450px;
+    height: 550px;
+    border: solid;
+    color: #0e62b0;
+    margin: 30px;
+    text-align: center;
+}
+
+.hero article h3 {
+    margin: 20px;
+}
+
+.hero article a {
+    background-color: #fafaf5;
+    color: #0e62b0;
+    padding: 5px;
+    text-decoration: none;
+    border: #0e62b0;
+    transition: 0.6s;
+}
+
+.hero article a:hover {
+    color: #fafaf5;
+    background-color: #0e62b0;
+}
+
+/*!-----------section favoritos----------------*/
+
+.favoritos {
+    text-align: center;
+    color: #0e62b0;
+}
+
+.favoritos div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.favoritos h2 {
+    font-size: 60px;
+    text-align: center;
+    background-color: #fafaf5;
+    padding: 40px;
+}
+
+.favoritos article img {
+    width: 400px;
+    height: 400px;
+}
+
+.favoritos article {
+    width: 450px;
+    height: 550px;
+    border: solid;
+    color: #0e62b0;
+    margin: 30px;
+    text-align: center;
+}
+
+.favoritos article h3 {
+    margin: 20px;
+}
+
+.favoritos article a {
+    background-color: #fafaf5;
+    color: #0e62b0;
+    padding: 5px;
+    text-decoration: none;
+    border: #0e62b0;
+    transition: 0.6s;
+}
+
+.favoritos article a:hover {
+    color: #fafaf5;
+    background-color: #0e62b0;
+}
+
+/*!-------------section contactos----------------*/
+
+.contacto h2 {
+    color: #0e62b0;
+    font-size: 80px;
+    text-transform: none;
+    text-align: center;
+    background-color: #fafaf5;
+    padding: 30px;
+}
+
+.contacto div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px;
+}
+
+.contacto div h3 {
+    text-align: left;
+    color: #0e62b0;
+    font-size: 60px;
+}
+
+.otras h2 {
+    color: #0e62b0;
+    font-size: 80px;
+    text-transform: none;
+    text-align: center;
+    background-color: #fafaf5;
+    padding: 30px;
+}
+
+.otras div a {
+    text-decoration: none;
+    font-size: 50px;
+    color: #0e62b0;
+    transition: 0.6s;
+}
+
+.otras div a:hover {
+    color: #fafaf5;
+    background-color: #0e62b0;
+    padding: 15px;
+}
+
+.otras div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 60px;
+}
+
+@media screen and (max-width: 317px) {}
+    .encabezado h1 {
+        text-decoration: none;
+        font-size: 30px;
+        font-style: unset;
+        color: #fafaf5;
+        text-align: center;
+    }
+
+
+    @media screen and (max-width:392px){}
+        header {
+            font-size: 60px;
+            font-weight: 500px;
+            color: #0e62b0;
+            text-align: center;
+        }
