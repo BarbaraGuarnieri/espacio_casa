@@ -1,17 +1,301 @@
-/* Error: Top-level selectors may not contain the parent selector "&".
- *    ,
- * 54 |     &:hover{
- *    |     ^
- *    '
- *   scss\estilos.scss 54:5  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: Top-level selectors may not contain the parent selector "&".\a    \2577 \a 54 \2502      &:hover{\d\a    \2502      ^\a    \2575 \a   scss\\estilos.scss 54:5  root stylesheet';
+@import url("https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  font-family: "PT Serif", serif;
+}
+
+header {
+  background-color: #fafaf5;
+  margin: 0px;
+}
+header h1 {
+  font-size: 100px;
+  font-weight: 800;
+  color: #0e62b0;
+  text-align: center;
+}
+
+.encabezado h1 {
+  text-decoration: none;
+  font-size: 100px;
+  font-style: unset;
+  color: #fafaf5;
+  text-align: left;
+}
+.encabezado nav ul li {
+  margin: 20px;
+}
+.encabezado a {
+  text-decoration: none;
+  color: #0e62b0;
+  font-size: 20px;
+  background-color: #fafaf5;
+  padding: 5px;
+  transition: 0.6s;
+}
+.encabezado .boton {
+  border: none;
+  color: #0e62b0;
+  transition: 5s;
+}
+.encabezado:hover {
+  background-color: #0e62b0;
+  color: #fafaf5;
+}
+.encabezado .hero div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.encabezado .hero h2 {
+  color: #0e62b0;
+  font-size: 80px;
+  text-transform: none;
+  text-align: center;
+  background-color: #fafaf5;
+  padding: 30px;
+}
+.encabezado .hero article {
+  width: 450px;
+  height: 550px;
+  border: solid;
+  color: #0e62b0;
+  margin: 30px;
+  text-align: center;
+  transition: 1s;
+}
+.encabezado .hero:hover {
+  transform: scale(1.1);
+  box-shadow: 8px 6px 23px 0px rgba(14, 98, 176, 0.75);
+  -webkit-box-shadow: 8px 6px 23px 0px rgba(14, 98, 176, 0.75);
+  -moz-box-shadow: 8px 6px 23px 0px rgba(14, 98, 176, 0.75);
+}
+.encabezado .hero img {
+  width: 400px;
+  height: 400px;
+}
+.encabezado .hero h3 {
+  margin: 20px;
+}
+.encabezado .hero a {
+  background-color: #fafaf5;
+  color: #0e62b0;
+  padding: 5px;
+  text-decoration: none;
+  border: #0e62b0;
+  transition: 0.6s;
+}
+.encabezado .favoritos {
+  text-align: center;
+  color: #0e62b0;
+}
+.encabezado .favoritos h2 {
+  font-size: 60px;
+  text-align: center;
+  background-color: #fafaf5;
+  padding: 40px;
+}
+.encabezado .favoritos h4 {
+  font-size: 125px;
+}
+.encabezado .favoritos div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 65px;
+}
+.encabezado .favoritos p {
+  font-size: 125px;
+}
+.encabezado .favoritos article {
+  width: 450px;
+  height: 550px;
+  border: solid;
+  color: #0e62b0;
+  margin: 30px;
+  text-align: center;
+  transition: 1s;
+}
+.encabezado .favoritos article:hover {
+  transform: scale(1.1);
+  box-shadow: 8px 6px 23px 0px rgba(14, 98, 176, 0.75);
+  -webkit-box-shadow: 8px 6px 23px 0px rgba(14, 98, 176, 0.75);
+  -moz-box-shadow: 8px 6px 23px 0px rgba(14, 98, 176, 0.75);
+}
+.encabezado .favoritos img {
+  width: 400px;
+  height: 400px;
+}
+.encabezado .favoritos h3 {
+  margin: 20px;
+}
+.encabezado .favoritos a {
+  background-color: #fafaf5;
+  color: #0e62b0;
+  padding: 5px;
+  text-decoration: none;
+  border: #0e62b0;
+  transition: 0.6s;
+}
+.encabezado .favoritos:hover {
+  color: #fafaf5;
+  background-color: #0e62b0;
+}
+.encabezado .contacto h2 {
+  color: #0e62b0;
+  font-size: 80px;
+  text-transform: none;
+  text-align: center;
+  background-color: #fafaf5;
+  padding: 30px;
+}
+.encabezado .contacto div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 30px;
+}
+.encabezado .contacto h3 {
+  text-align: left;
+  color: #0e62b0;
+  font-size: 60px;
+}
+.encabezado .otras h2 {
+  color: #0e62b0;
+  font-size: 80px;
+  text-transform: none;
+  text-align: center;
+  background-color: #fafaf5;
+  padding: 30px;
+}
+.encabezado .otras div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 60px;
+}
+.encabezado .otras a {
+  text-decoration: none;
+  font-size: 50px;
+  color: #0e62b0;
+  transition: 0.6s;
+}
+.encabezado .otras:hover {
+  color: #fafaf5;
+  background-color: #0e62b0;
+  padding: 15px;
+}
+.encabezado .personalizado div {
+  font-size: 80px;
+  color: #0e62b0;
+  text-align: center;
+}
+.encabezado .historia h4 {
+  text-align: center;
+  color: #0e62b0;
+  font-size: 60px;
+  background-color: #fafaf5;
+  padding: 20px;
+}
+.encabezado .historia p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #333;
+  margin: 40px;
+  text-align: justify;
+}
+.encabezado .encabezado h1 {
+  text-decoration: none;
+  font-size: 60px;
+  font-style: unset;
+  color: #fafaf5;
+  text-align: center;
+}
+.encabezado div {
+  font-size: 100px;
+  font-weight: 500px;
+  color: #0e62b0;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  header h1 {
+    font-size: 60px;
+  }
+  .encabezado h1 {
+    font-size: 50px;
+    text-align: left;
+  }
+  .encabezado nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .encabezado .hero h2 {
+    font-size: 60px;
+  }
+  .encabezado .hero article {
+    width: 300px;
+    height: auto;
+  }
+  .encabezado .favoritos h2 {
+    font-size: 50px;
+  }
+  .encabezado .favoritos div {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .encabezado .favoritos h4,
+  .encabezado .favoritos p {
+    font-size: 40px;
+  }
+  .encabezado .contacto h2,
+  .encabezado .otras h2 {
+    font-size: 50px;
+  }
+  .encabezado .historia h4 {
+    font-size: 40px;
+  }
+  .encabezado .historia p {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header h1 {
+    font-size: 100px;
+  }
+  .encabezado h1 {
+    font-size: 100px;
+  }
+  .encabezado .hero h2 {
+    font-size: 80px;
+  }
+  .encabezado .hero article {
+    width: 450px;
+    height: 550px;
+  }
+  .encabezado .favoritos h2 {
+    font-size: 60px;
+  }
+  .encabezado .favoritos h4,
+  .encabezado .favoritos p {
+    font-size: 60px;
+  }
+  .encabezado .contacto h2,
+  .encabezado .otras h2 {
+    font-size: 80px;
+  }
+  .encabezado .historia h4 {
+    font-size: 60px;
+  }
+  .encabezado .historia p {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
